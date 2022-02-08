@@ -3,13 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		015D138827B24BC000BC9F1A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015D138727B24BC000BC9F1A /* LoginViewModel.swift */; };
+		015D138A27B24C0500BC9F1A /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015D138927B24C0500BC9F1A /* LoginModel.swift */; };
+		015D138D27B24D4400BC9F1A /* RestEngine in Frameworks */ = {isa = PBXBuildFile; productRef = 015D138C27B24D4400BC9F1A /* RestEngine */; };
+		015D138F27B258CE00BC9F1A /* RegistrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015D138E27B258CE00BC9F1A /* RegistrationModel.swift */; };
+		015D139127B25A5800BC9F1A /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015D139027B25A5800BC9F1A /* RegistrationViewController.swift */; };
 		01D5866127B12810001C757F /* NXT_LoginModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D5865727B1280F001C757F /* NXT_LoginModule.framework */; };
 		01D5866627B12810001C757F /* NXT_LoginModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5866527B12810001C757F /* NXT_LoginModuleTests.swift */; };
 		01D5866827B12810001C757F /* NXT_LoginModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 01D5865A27B1280F001C757F /* NXT_LoginModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01D5867B27B1282E001C757F /* LoginModulePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5867A27B1282E001C757F /* LoginModulePlugin.swift */; };
+		01D5868027B129AA001C757F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01D5867F27B129AA001C757F /* Login.storyboard */; };
+		01D5868227B12A91001C757F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D5868127B12A91001C757F /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +31,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		015D138727B24BC000BC9F1A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		015D138927B24C0500BC9F1A /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		015D138E27B258CE00BC9F1A /* RegistrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModel.swift; sourceTree = "<group>"; };
+		015D139027B25A5800BC9F1A /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		01D5865727B1280F001C757F /* NXT_LoginModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NXT_LoginModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D5865A27B1280F001C757F /* NXT_LoginModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NXT_LoginModule.h; sourceTree = "<group>"; };
 		01D5865B27B1280F001C757F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01D5866027B12810001C757F /* NXT-LoginModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NXT-LoginModuleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D5866527B12810001C757F /* NXT_LoginModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NXT_LoginModuleTests.swift; sourceTree = "<group>"; };
 		01D5866727B12810001C757F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D5867A27B1282E001C757F /* LoginModulePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModulePlugin.swift; sourceTree = "<group>"; };
+		01D5867F27B129AA001C757F /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		01D5868127B12A91001C757F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015D138D27B24D4400BC9F1A /* RestEngine in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +66,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		015D138427B24B9200BC9F1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				015D138927B24C0500BC9F1A /* LoginModel.swift */,
+				015D138E27B258CE00BC9F1A /* RegistrationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		015D138527B24B9900BC9F1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01D5868127B12A91001C757F /* LoginViewController.swift */,
+				015D139027B25A5800BC9F1A /* RegistrationViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		015D138627B24B9F00BC9F1A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				01D5867A27B1282E001C757F /* LoginModulePlugin.swift */,
+				015D138727B24BC000BC9F1A /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		01D5864D27B1280F001C757F = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +114,10 @@
 		01D5865927B1280F001C757F /* NXT-LoginModule */ = {
 			isa = PBXGroup;
 			children = (
+				015D138627B24B9F00BC9F1A /* ViewModel */,
+				015D138527B24B9900BC9F1A /* View */,
+				015D138427B24B9200BC9F1A /* Model */,
+				01D5867F27B129AA001C757F /* Login.storyboard */,
 				01D5865A27B1280F001C757F /* NXT_LoginModule.h */,
 				01D5865B27B1280F001C757F /* Info.plist */,
 			);
@@ -114,6 +161,9 @@
 			dependencies = (
 			);
 			name = "NXT-LoginModule";
+			packageProductDependencies = (
+				015D138C27B24D4400BC9F1A /* RestEngine */,
+			);
 			productName = "NXT-LoginModule";
 			productReference = 01D5865727B1280F001C757F /* NXT_LoginModule.framework */;
 			productType = "com.apple.product-type.framework";
@@ -147,6 +197,7 @@
 				TargetAttributes = {
 					01D5865627B1280F001C757F = {
 						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
 					};
 					01D5865F27B12810001C757F = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -162,6 +213,9 @@
 				Base,
 			);
 			mainGroup = 01D5864D27B1280F001C757F;
+			packageReferences = (
+				015D138B27B24D4400BC9F1A /* XCRemoteSwiftPackageReference "RestEngine" */,
+			);
 			productRefGroup = 01D5865827B1280F001C757F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -177,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D5868027B129AA001C757F /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +249,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				015D139127B25A5800BC9F1A /* RegistrationViewController.swift in Sources */,
+				01D5868227B12A91001C757F /* LoginViewController.swift in Sources */,
+				015D138A27B24C0500BC9F1A /* LoginModel.swift in Sources */,
+				01D5867B27B1282E001C757F /* LoginModulePlugin.swift in Sources */,
+				015D138827B24BC000BC9F1A /* LoginViewModel.swift in Sources */,
+				015D138F27B258CE00BC9F1A /* RegistrationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +402,7 @@
 		01D5866C27B12810001C757F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9NT2CC72M7;
@@ -357,6 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.module.sample.NXT-LoginModule";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +428,7 @@
 		01D5866D27B12810001C757F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 9NT2CC72M7;
@@ -389,6 +453,7 @@
 		01D5866F27B12810001C757F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9NT2CC72M7;
 				INFOPLIST_FILE = "NXT-LoginModuleTests/Info.plist";
@@ -407,6 +472,7 @@
 		01D5867027B12810001C757F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9NT2CC72M7;
 				INFOPLIST_FILE = "NXT-LoginModuleTests/Info.plist";
@@ -453,6 +519,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		015D138B27B24D4400BC9F1A /* XCRemoteSwiftPackageReference "RestEngine" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/shyam-kumar-iOS/RestEngine.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		015D138C27B24D4400BC9F1A /* RestEngine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 015D138B27B24D4400BC9F1A /* XCRemoteSwiftPackageReference "RestEngine" */;
+			productName = RestEngine;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 01D5864E27B1280F001C757F /* Project object */;
 }

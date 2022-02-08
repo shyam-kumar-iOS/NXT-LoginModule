@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "RestEngine",
+        "repositoryURL": "https://github.com/shyam-kumar-iOS/RestEngine.git",
+        "state": {
+          "branch": "main",
+          "revision": "05ae259d0b5a241d8191ed91647b54cc73743d47",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
